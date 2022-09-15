@@ -1,0 +1,14 @@
+div {
+    color: blue;
+    background-color: orange;
+    border-width: 20px;
+    border-style: dashed;
+}
+
+p {
+    color: blue;
+}
+
+span {
+    color: red;
+}

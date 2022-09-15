@@ -1,0 +1,14 @@
+body {
+    background-color: aquamarine;
+}
+
+div {
+    background-color: chocolate;
+    border-color: azure;
+    border-width: 10px;
+    border-style: dashed;
+}
+
+span {
+    background-color: greenyellow;
+}

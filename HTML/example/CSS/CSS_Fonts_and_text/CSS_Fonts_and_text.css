@@ -1,0 +1,19 @@
+/* COMMENT 
+
+1em == current font size (web browser)
+
+*/
+
+body {
+    font-family: "Bungee Spice";
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+p {
+    font-size: 2em;
+}
