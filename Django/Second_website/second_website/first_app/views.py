@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http.response import HttpResponse, HttpResponseNotFound, Http404
-
+from django.http.response import HttpResponse, HttpResponseNotFound, Http404, HttpResponseRedirect
+from django.urls import reverse
 # Create your views here.
 
 articles = {
@@ -27,3 +27,9 @@ def add_view(request, num1, num2):
 
 
 # domian.com/first_app/0 ---> domian.com/first_app/sports
+
+def num_page_view(request, num_page):
+    topic_list = list(articles.keys())
+    topic = topic_list[num_page]
+
+    return HttpResponseRedirect(reverse('topic-page', args=[topic]))
